@@ -5,7 +5,7 @@ import React from "react";
 
 const CarouselBanner = () => {
   return (
-    <div>
+    <>
       <Carousel
         autoPlay
         infiniteLoop
@@ -68,7 +68,7 @@ const CarouselBanner = () => {
           />
         </div>
       </Carousel>
-    <div/>
+    </>
   );
 };
 
