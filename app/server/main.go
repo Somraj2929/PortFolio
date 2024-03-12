@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
-
+	
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -25,7 +25,7 @@ func loadEnv() error {
 }
 
 func connectToMongo() (*mongo.Client, error) {
-	// Read MongoDB credentials from environment variables
+	
 	username := os.Getenv("MONGO_USERNAME")
 	password := os.Getenv("MONGO_PASSWORD")
 	uri := os.Getenv("MONGO_URI")
@@ -48,7 +48,7 @@ func connectToMongo() (*mongo.Client, error) {
 	}
 
 	// Send a ping to confirm a successful connection
-	if err := client.Database("blogs").RunCommand(context.TODO(), bson.D{{"ping", 1}}).Err(); err != nil {
+	if err := client.Database("admin").RunCommand(context.TODO(), bson.D{{"ping", 1}}).Err(); err != nil {
 		return nil, err
 	}
 
@@ -74,37 +74,35 @@ func main() {
 
 	// Add CORS middleware
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"http://localhost:3000/blogs/data/"}
+	config.AllowOrigins = []string{"*"}
 	config.AllowCredentials = true
+	config.AddAllowHeaders("Authorization")
 	r.Use(cors.New(config))
 
-	// Define a simple endpoint
-	r.GET("/api/ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"message": "pong"})
-	})
 
-	// Define an endpoint to fetch data from MongoDB
-	r.GET("/api/data", func(c *gin.Context) {
-		// Perform MongoDB operations using the 'client' instance
-		// Replace the following lines with your actual MongoDB data fetching logic
-		collection := client.Database("blogs").Collection("Blogs_Data")
-		cursor, err := collection.Find(context.TODO(), bson.D{})
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch data"})
-			return
-		}
-		defer cursor.Close(context.TODO())
 
-		var result []bson.M
-		if err := cursor.All(context.TODO(), &result); err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to decode data"})
-			return
-		}
 
-		c.JSON(http.StatusOK, result)
-	})
 
-	// Run the Gin server
+// Handle GET request for fetching data
+r.GET("/api/data", func(c *gin.Context) {
+
+    collection := client.Database("blogs").Collection("Blogs_Data")
+    cursor, err := collection.Find(context.TODO(), bson.D{})
+    if err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch data"})
+        return
+    }
+    defer cursor.Close(context.TODO())
+
+    var result []bson.M
+    if err := cursor.All(context.TODO(), &result); err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to decode data"})
+        return
+    }
+
+    c.JSON(http.StatusOK, result)
+})
+	
 	err = r.Run(":8000")
 	if err != nil {
 		log.Fatal(err)

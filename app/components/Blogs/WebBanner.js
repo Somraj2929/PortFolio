@@ -10,7 +10,7 @@ const WebBanner = ({ blogs }) => {
         <h1>Trendings</h1>
       </div>
       <Carousel
-        autoPlay
+        autoPlay={true}
         infiniteLoop
         showThumbs={false}
         showStatus={false}
@@ -20,7 +20,7 @@ const WebBanner = ({ blogs }) => {
       >
         {blogs.map((blog) => (
           <div
-            key={blog.id}
+            key={blog._id}
             className="flex flex-col md:flex-row justify-center rounded-lg bg-pink-100 md:p-6"
           >
             <div className="flex justify-center items-center h-auto md:w-[30rem] p-2">
