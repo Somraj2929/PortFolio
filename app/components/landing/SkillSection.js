@@ -13,7 +13,10 @@ const SkillSection = () => {
         </div>
         <div className="md:max-w-[70vh] md:w-auto w-[24rem] pt-4 px-4">
           <p className="flex items-center">
-            <img src="/images/arrow.svg" alt="Arrow" />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/arrow.svg"
+              alt="Arrow"
+            />
             <span className="ml-2 text-wrap">
               Experienced in crafting scalable web applications and implementing
               robust DevOps practices. Proficient in CI/CD pipelines,
@@ -26,19 +29,47 @@ const SkillSection = () => {
         <div>
           <h2 className="text-4xl font-semibold mt-8 mb-4">Skills</h2>
           <div className="flex flex-wrap justify-center md:w-[26rem] w-[24rem]">
-            <img src="/images/nextjs.svg" alt="NextJS" className="md:p-1 p-1" />
-            <img src="/images/go.svg" alt="Golang" className="p-1" />
-            <img src="/images/git.svg" alt="Git" className="p-1" />
-            <img src="/images/aws.svg" alt="AWS" className="p-1" />
-            <img src="/images/jenkins.svg" alt="Jenkins" className="p-1" />
-            <img src="/images/docker.svg" alt="Docker" className="p-1" />
             <img
-              src="/images/kubernetes.svg"
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/nextjs.svg"
+              alt="NextJS"
+              className="md:p-1 p-1"
+            />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/go.svg"
+              alt="Golang"
+              className="p-1"
+            />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/git.svg"
+              alt="Git"
+              className="p-1"
+            />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/aws.svg"
+              alt="AWS"
+              className="p-1"
+            />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/jenkins.svg"
+              alt="Jenkins"
+              className="p-1"
+            />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/docker.svg"
+              alt="Docker"
+              className="p-1"
+            />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/kubernetes.svg"
               alt="Kubernetes"
               className="p-1"
             />
 
-            <img src="/images/figma.svg" alt="Figma" className="p-1" />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/figma.svg"
+              alt="Figma"
+              className="p-1"
+            />
           </div>
         </div>
       </div>
@@ -54,8 +85,8 @@ const SkillSection = () => {
             {experiences.map((experience, index) => (
               <div key={index} className="pt-4">
                 <img
-                  src="/images/cardline.svg"
-                  alt="NextJS"
+                  src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/cardline.svg"
+                  alt="Experiences"
                   className="w-full"
                 />
                 <div className="flex justify-between">
@@ -71,7 +102,10 @@ const SkillSection = () => {
             ))}
           </div>
           <div className="justify-center items-center flex">
-            <img src="./images/Devops.png" className="ml-2 mt-1 md:h-[35vh]" />
+            <img
+              src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/Devops.png"
+              className="ml-2 mt-1 md:h-[35vh]"
+            />
           </div>
         </div>
       </div>

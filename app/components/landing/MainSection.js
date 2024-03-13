@@ -6,7 +6,11 @@ const MainSection = () => {
       {/* Left Section */}
       <div className="flex flex-col">
         <div className="md:mt-12 mt-6 mb-[-1.5rem] md:ml-[-2rem] ml-[-1.2rem]">
-          <img src="/images/hello.svg" alt="Logo" className="h-14" />
+          <img
+            src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/hello.svg"
+            alt="Logo"
+            className="h-14"
+          />
         </div>
         <div className="text-left">
           <h1 className="text-5xl tracking-[5px] leading-tight font-bold">
@@ -16,7 +20,10 @@ const MainSection = () => {
           </h1>
         </div>
         <p className="flex items-center mt-2">
-          <img src="/images/arrow.svg" alt="Arrow" />
+          <img
+            src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/arrow.svg"
+            alt="Arrow"
+          />
           <span className="ml-2 ">
             From Pixels to Pipelines: Development,
             <br />
@@ -25,7 +32,7 @@ const MainSection = () => {
         </p>
         <div className="flex mt-4">
           <Link href="#contact">
-            <button className="flex items-center justify-center bg-indigo-600 hover:bg-emerald-400 text-white font-bold py-4 px-6 mt-4 rounded-[20px] ">
+            <button className="flex items-center justify-center bg-indigo-600 hvr-call-action text-white font-bold py-4 px-6 mt-4 rounded-[20px] ">
               Let's Talk
               <span className="ml-2">
                 <svg
@@ -72,14 +79,22 @@ const MainSection = () => {
               rel="noopener noreferrer"
               className="mr-2"
             >
-              <img src="/images/github.png" alt="GitHub" className="h-9" />
+              <img
+                src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/github.png"
+                alt="GitHub"
+                className="h-9"
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/somraj29/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/images/linkedin.png" alt="LinkedIn" className="h-8" />
+              <img
+                src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/linkedin.png"
+                alt="LinkedIn"
+                className="h-8"
+              />
             </a>
           </div>
         </div>
@@ -90,7 +105,7 @@ const MainSection = () => {
         <div className="relative flex-wrap hidden md:block">
           {/* SomrajPP image */}
           <img
-            src="/images/SomrajPP.svg"
+            src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/SomrajPP.svg"
             alt="Hero"
             className="w-[30rem] bg-transparent"
           />
@@ -103,16 +118,18 @@ const MainSection = () => {
           </div>
 
           {/* About Me image - Centered at the Bottom */}
-          <div className="absolute bottom-6 ml-[-1.5em] left-1/2 transform -translate-x-1/2 p-6">
-            <img
-              src="/images/aboutme.svg"
-              alt="About Me"
-              className="h-28 mx-auto"
-            />
+          <div className="absolute bottom-6 ml-[-1.5em] left-1/2 transform -translate-x-1/2 p-6 ">
+            <Link href="services">
+              <img
+                src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/aboutme.svg"
+                alt="About Me"
+                className="h-28 about-me mx-auto"
+              />
+            </Link>
           </div>
         </div>
         <div className="right-0 absolute mr-4 hidden md:block">
-          <img src="/images/scrolldown.svg" />
+          <img src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/scrolldown.svg" />
         </div>
       </div>
     </div>

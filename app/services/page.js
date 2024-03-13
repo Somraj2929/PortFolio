@@ -10,7 +10,7 @@ const index = () => {
   return (
     <>
       <Navbar />
-      <CarouselBanner />
+      {/* <CarouselBanner /> */}
       <Services />
       <Testimonials />
       <ContactService />

@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black p-2 w-full flex items-center justify-between overflow-x-hidden overscroll-x-none  sticky z-20 top-0 shadow-2xl shadow-silver-100">
+    <nav className="bg-homepage-gradient p-2 w-full flex items-center justify-between overflow-x-hidden overscroll-x-none  sticky z-20 top-0 shadow-2xl shadow-silver-100">
       <div className="md:hidden flex items-center">
         <button
           onClick={toggleMenu}
@@ -23,20 +23,24 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-center ml-8 md:ml-2">
         <Link href="/">
-          <img src="/images/SomrajBGB.png" alt="Logo" className="h-14" />
+          <img
+            src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/SomrajBGR.png"
+            alt="Logo"
+            className="h-14"
+          />
         </Link>
       </div>
 
-      <div className="hidden md:flex space-x-4 font-semibold gap-4 text-white">
+      <div className="hidden md:flex space-x-4 font-semibold gap-4 text-white ">
         <Link href="/">
-          <p>Home</p>
+          <p className="hvr-underline">Home</p>
         </Link>
         <Link href="/services">
-          <p>Services</p>
+          <p className="hvr-underline">Services</p>
         </Link>
 
         <Link href="/blogs">
-          <p>Blog</p>
+          <p className="hvr-underline">Blog</p>
         </Link>
       </div>
 
@@ -60,8 +64,12 @@ const Navbar = () => {
         </div>
       )}
 
-      <Link href="/images.Somraj.svg">
-        <button className="hidden md:block bg-indigo-500 hover:bg-emerald-400 text-white font-bold py-3 px-4 md:mr-4 rounded-[15px]   mr-[-2px]">
+      <Link
+        href="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/cv/SomrajCVMain_Dev.pdf"
+        target="_blank"
+        download="SomrajCVMain_Dev.pdf"
+      >
+        <button className="hidden md:block hvr-call-action bg-indigo-500  text-white font-bold py-3 px-4 md:mr-4 rounded-[15px]   mr-[-2px]">
           Get Resume
         </button>
         {/* <button className="block md:hidden bg-indigo-600 hover:bg-green-800 text-white font-bold py-2 px-3 md:mr-4 rounded-[15px] md:w-[133px]  md:h-[51px]">
@@ -69,7 +77,7 @@ const Navbar = () => {
         </button> */}
 
         <img
-          src="/images/resume.png"
+          src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/resume.png"
           alt="Contact"
           className="block md:hidden "
         />

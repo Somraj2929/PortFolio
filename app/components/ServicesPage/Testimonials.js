@@ -52,7 +52,7 @@ const Testimonials = () => {
         <div className="flex flex-wrap justify-center p-2">
           {testinomials.map((testimonial) => (
             <div className="w-[24rem] px-4 mb-8" key={testimonial.id}>
-              <div className="bg-pink-100 p-6 rounded-lg shadow-lg">
+              <div className="bg-red-200 p-6 rounded-lg shadow-lg">
                 <p className="text-gray-600 mb-6">{testimonial.text}</p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4">

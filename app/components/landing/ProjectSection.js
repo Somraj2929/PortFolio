@@ -11,7 +11,7 @@ const ProjectSection = () => {
       </div>
       <span className="justify-center items-center flex">
         <img
-          src="/images/borderline1.svg"
+          src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/borderline1.svg"
           alt="underline"
           className="w-[20rem] mt-4"
         />
@@ -20,7 +20,7 @@ const ProjectSection = () => {
         {topProjects.map((project, index) => (
           <div
             key={index}
-            className="w-[20rem] h-auto bg-white shadow shadow-indigo-600 rounded-[20px] flex flex-col p-2"
+            className="w-[22rem] hvr-glow h-auto bg-indigo-100 shadow shadow-indigo-600 rounded-[20px] flex flex-col p-2"
           >
             <img
               src={project.image}
@@ -28,7 +28,7 @@ const ProjectSection = () => {
               className="w-full h-[200px] rounded-[20px] rounded-tr-[20px] object-fit"
             />
             <div className="flex justify-between items-center p-2">
-              <h2 className="text-xl font-semibold text-black">
+              <h2 className="text-xl font-semibold text-black hover:text-[#ff972d]">
                 {project.title}
               </h2>
               <p className="text-gray-700 text-sm font-light italic">
@@ -36,15 +36,15 @@ const ProjectSection = () => {
               </p>
             </div>
 
-            <p className="text-gray-900 px-3 pb-2 text-wrap">
-              {project.description.slice(0, 137) + "..."}
+            <p className="text-gray-900 px-2 pb-2 text-wrap">
+              {project.description.slice(0, 145) + "..."}
             </p>
 
             <ul className="flex justify-evenly  mt-auto">
               {project.skills.slice(0, 3).map((skill, skillIndex) => (
                 <li
                   key={skillIndex}
-                  className="inline-block bg-gray-200 text-gray-700 px-2 py-1 rounded m-2 "
+                  className="inline-block bg-gray-200 hover:bg-pink-300 text-gray-700 px-2 py-1 rounded m-2 "
                 >
                   {skill}
                 </li>
@@ -52,7 +52,7 @@ const ProjectSection = () => {
             </ul>
             <div className="p-2 ">
               <button
-                className="block w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:bg-emerald-500 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                className="block hvr-sweep-to-right w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all  focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button"
               >
                 View Project

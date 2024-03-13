@@ -30,7 +30,7 @@ const Services = () => {
         {servicesDB.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col text-left w-auto max-w-[24rem] border p-4  rounded-lg bg-services"
+            className="flex flex-col text-left w-auto max-w-[24rem] border p-4  rounded-lg bg-services text-white"
           >
             <h2 className="text-xl font-semibold mt-2 hover:text-[#ff972d]">
               {service.serviceName}

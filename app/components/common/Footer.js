@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex justify-between shadow-2xl shadow-white items-center p-10 bg-black text-white overflow-hidden overscroll-none ">
+    <div className="flex justify-between shadow-2xl shadow-white items-center px-10 py-6 bg-black text-white overflow-hidden overscroll-none ">
       <div>
         <p>
           &copy; 2024 <a href="https://www.linkedin.com/in/somraj29">Somraj</a>

@@ -46,7 +46,7 @@ const ContactMe = () => {
               type="text"
               id="name"
               placeholder="Your Name"
-              className="border-2 border-indigo-400  rounded py-2 px-3 w-[40vh] md:w-[35rem]  text-black font-medium"
+              className="border-2 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem]  text-black font-medium"
             />
           </div>
           <div className="mb-4">
@@ -57,7 +57,7 @@ const ContactMe = () => {
               type="email"
               id="email"
               placeholder="Your Email"
-              className="border-2 border-indigo-400  rounded py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
+              className="border-2 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
             />
           </div>
           <div className="mb-4">
@@ -68,7 +68,7 @@ const ContactMe = () => {
               type="tel"
               id="phone"
               placeholder="Your Phone"
-              className="border-2 border-indigo-400  rounded py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
+              className="border-2 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
             />
           </div>
           <div className="mb-4">
@@ -78,7 +78,7 @@ const ContactMe = () => {
             <textarea
               id="message"
               placeholder="Your Message"
-              className="border-2 border-indigo-400  rounded py-2 px-3 w-[40vh] md:w-[35rem] h-28 text-black font-medium"
+              className="border-2 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] h-28 text-black font-medium"
             />
           </div>
           <button
