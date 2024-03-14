@@ -1,6 +1,28 @@
-import experiences from "@/public/data/experience";
+"use client";
+import React, { useEffect, useState } from "react";
 
 const SkillSection = () => {
+  const [experiences, setExperiences] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/api/experiences");
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        setExperiences(data);
+      } catch (error) {
+        console.error("Error fetching experience:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="bg-white flex flex-wrap justify-around p-4 shadow-2xl shadow-white overflow-x-hidden">
       {/* left section */}

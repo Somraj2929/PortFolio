@@ -1,7 +1,19 @@
+"use client";
 import { FaBuildingColumns, FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
+import { useEffect } from "react";
+import Link from "next/link";
 
 const ContactMe = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const script = document.createElement("script");
+      script.src = "https://s.pageclip.co/v1/pageclip.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <div className="bg-homepage-gradient text-white flex flex-wrap overflow-x-hidden overscroll-x-none justify-evenly shadow-2xl shadow-black">
       {/* left side */}
@@ -19,15 +31,21 @@ const ContactMe = () => {
           <div className="flex flex-col italic ">
             <span className="flex flex-row items-center mt-2 mb-2">
               <FaBuildingColumns className="h-6 w-6" />
-              <p> &nbsp;&nbsp; Jodhpur, India.</p>
+              <Link href="https://shorturl.at/apxF6" target="_blank">
+                <p> &nbsp;&nbsp; Jodhpur, India.</p>
+              </Link>
             </span>
             <span className="flex flex-row items-center mt-2 mb-2">
               <FaPhone className="h-6 w-6" />
-              <p> &nbsp;&nbsp; +91-8058828957</p>
+              <Link href="tel:+918058828957">
+                <p> &nbsp;&nbsp; +91-8058828957</p>
+              </Link>
             </span>
             <span className="flex flex-row items-center mt-2 mb-2">
               <IoMdMail className="h-6 w-6" />
-              <p> &nbsp;&nbsp; somrajbishnoirock29@gmail.com</p>
+              <Link href="mailto:somrajbishnoirock29@gmail.com">
+                <p> &nbsp;&nbsp; somrajbishnoirock29@gmail.com</p>
+              </Link>
             </span>
           </div>
         </div>
@@ -37,16 +55,21 @@ const ContactMe = () => {
         className="flex flex-col items-center justify-center p-8"
         id="contact"
       >
-        <form className="flex flex-col items-end">
+        <form
+          action="https://send.pageclip.co/xdvSeQsikzoNQNna7lOQ0FUofEN9RgBp"
+          className="flex flex-col items-end pageclip-form"
+          method="post"
+        >
           <div className="mb-4">
             <label htmlFor="name" className="block font-semibold mb-2">
               Name
             </label>
             <input
               type="text"
-              id="name"
+              name="name"
               placeholder="Your Name"
-              className="border-2 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem]  text-black font-medium"
+              required
+              className=" focus:outline-green-500 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem]  text-black font-medium"
             />
           </div>
           <div className="mb-4">
@@ -55,9 +78,10 @@ const ContactMe = () => {
             </label>
             <input
               type="email"
-              id="email"
+              name="email"
+              required
               placeholder="Your Email"
-              className="border-2 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
+              className=" focus:outline-green-500 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
             />
           </div>
           <div className="mb-4">
@@ -66,9 +90,10 @@ const ContactMe = () => {
             </label>
             <input
               type="tel"
-              id="phone"
+              name="phone"
+              required
               placeholder="Your Phone"
-              className="border-2 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
+              className=" focus:outline-green-500 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
             />
           </div>
           <div className="mb-4">
@@ -76,14 +101,15 @@ const ContactMe = () => {
               Message
             </label>
             <textarea
-              id="message"
+              name="message"
+              required
               placeholder="Your Message"
-              className="border-2 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] h-28 text-black font-medium"
+              className=" focus:outline-green-500 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] h-28 text-black font-medium"
             />
           </div>
           <button
             type="submit"
-            className="bg-indigo-600 text-white font-semibold py-2 px-4 rounded"
+            className="bg-indigo-600 hover:bg-emerald-500 text-white font-semibold py-2 px-4 rounded pageclip-form__submit"
           >
             Send Message
           </button>

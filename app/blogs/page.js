@@ -5,7 +5,6 @@ import WebBanner from "../components/Blogs/WebBanner";
 import { useEffect, useState } from "react";
 
 const blogs = () => {
-  const [allBlogs, setAllBlogs] = useState([]);
   const [trendingBlogs, setTrendingBlogs] = useState([]);
 
   useEffect(() => {

@@ -120,6 +120,24 @@ r.GET("/api/projects", func(c *gin.Context) {
 
     c.JSON(http.StatusOK, result)
 })
+
+r.GET("/api/experiences", func(c *gin.Context) {
+	collection := client.Database("somraj_portfolio").Collection("experiences")
+    cursor, err := collection.Find(context.TODO(), bson.D{})
+    if err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch data"})
+        return
+    }
+    defer cursor.Close(context.TODO())
+
+    var result []bson.M
+    if err := cursor.All(context.TODO(), &result); err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to decode data"})
+        return
+    }
+
+    c.JSON(http.StatusOK, result)
+})
 	
 	err = r.Run(":8000")
 	if err != nil {

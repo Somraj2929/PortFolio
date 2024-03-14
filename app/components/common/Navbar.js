@@ -45,22 +45,24 @@ const Navbar = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden fixed top-0 left-0 h-screen w-full bg-black text-white flex flex-col items-center">
+        <div className="md:hidden fixed top-0 left-0 h-screen w-[60%] bg-homepage-gradient text-white flex flex-col items-center">
           <div className="flex justify-end p-4">
-            <button onClick={toggleMenu} className="text-2xl">
+            <button onClick={toggleMenu} className="text-4xl">
               &times;
             </button>
           </div>
-          <Link href="/">
-            <p className=" py-2 focus:text-yellow-400">Home</p>
-          </Link>
-          <Link href="/services">
-            <p className=" py-2">Services</p>
-          </Link>
+          <div className="flex flex-col font-semibold text-center">
+            <Link href="/">
+              <p className=" py-2 active:text-yellow-400">Home</p>
+            </Link>
+            <Link href="/services">
+              <p className="py-2 active:text-yellow-400">Services</p>
+            </Link>
 
-          <Link href="/blogs">
-            <p className=" py-2">Blog</p>
-          </Link>
+            <Link href="/blogs">
+              <p className="py-2 active:text-yellow-400">Blog</p>
+            </Link>
+          </div>
         </div>
       )}
 

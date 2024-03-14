@@ -1,8 +1,37 @@
+"use client";
 import Link from "next/link";
-import projectsData from "/public/data/projectsData"; // Adjust the path as needed
+import projectsData from "/public/data/projectsData";
+import { useEffect, useState } from "react";
 
 const ProjectSection = () => {
-  const topProjects = projectsData.slice(0, 3);
+  const [allProjects, setAllProjects] = useState([]);
+  const [trendingProjects, setTrendingProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/api/projects");
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        //for filtering the tagged projects
+        const tagged = data.filter((project) => {
+          return (
+            project.tag && project.tag.some((tag) => tag.toLowerCase() === "go")
+          );
+        });
+
+        setAllProjects(data);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="bg-homepage-gradient relative text-white overflow-x-hidden overscroll-x-none shadow-2xl shadow-black  ">
@@ -17,7 +46,7 @@ const ProjectSection = () => {
         />
       </span>
       <div className="flex flex-wrap justify-center gap-6 mt-8 ">
-        {topProjects.map((project, index) => (
+        {allProjects.map((project, index) => (
           <div
             key={index}
             className="w-[22rem] hvr-glow h-auto bg-indigo-100 shadow shadow-indigo-600 rounded-[20px] flex flex-col p-2"
@@ -51,23 +80,27 @@ const ProjectSection = () => {
               ))}
             </ul>
             <div className="p-2 ">
-              <button
-                className="block hvr-sweep-to-right w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all  focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                type="button"
-              >
-                View Project
-              </button>
+              <Link href={project.repoLink} target="_blank">
+                <button
+                  className="block hvr-sweep-to-right w-full select-none rounded-lg bg-gray-900 py-3.5 px-7 text-center align-middle text-sm font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all  focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  View Project
+                </button>
+              </Link>
             </div>
           </div>
         ))}
       </div>
       <div className="p-6 pt-3 justify-center flex">
-        <button
-          className="block w-50% select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle  text-sm font-bold uppercase text-black shadow-md  transition-all hover:shadow-lg hover:bg-indigo-600 hover:text-white focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          type="button"
-        >
-          View All Projects
-        </button>
+        <Link href="https://github.com/somraj2929" target="_blank">
+          <button
+            className="block w-50% select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle  text-sm font-bold uppercase text-black shadow-md  transition-all hover:shadow-lg hover:bg-indigo-600 hover:text-white focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+          >
+            View All Projects
+          </button>
+        </Link>
       </div>
     </div>
   );

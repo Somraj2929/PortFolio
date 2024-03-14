@@ -1,31 +1,26 @@
-{
-  "projects": [
-    {
-      "id": 1,
-      "image": "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/projects/NewsApp.png",
-      "title": "News App with NextJS",
-      "date": "March 2023",
-      "description": "Experience the next level of news consumption with our cutting-edge News App powered by Next.js and styled with Tailwind CSS. With seamless integration of the NewsAPI, stay informed with the latest headlines, breaking news, and trending stories from around the world. Our News App offers an intuitive user interface, providing advanced features such as search, filter, and pagination, allowing you to customize your news feed according to your interests. Effortlessly search for specific topics or keywords, filter news articles based on categories or sources, and navigate through pages of content with ease. Whether you're a news enthusiast, a professional staying updated on industry trends, or simply looking to stay informed about current events, our News App delivers a streamlined and personalized news experience like never before. Embrace the future of news consumption with our feature-rich News App, your gateway to the world's latest stories, all in one place.",
-      "repoLink": "https://somraj-news-site.vercel.app/",
-      "skills": ["NextJS", "Tailwind", "JavaScript", "Web"]
-    },
-    {
-      "id": 2,
-      "image": "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/projects/chatingo.jpg",
-      "title": "Realtime ChatApp with GO",
-      "date": "Feb 2023",
-      "description": "Step into the world of seamless communication with our Realtime ChatApp powered by Go on the backend and React on the frontend. Harnessing the power of Go channels, our ChatApp delivers lightning-fast messaging capabilities, ensuring real-time interactions with minimal latency. With our intuitive frontend built on React, users experience a sleek and responsive interface, allowing them to engage in conversations effortlessly. Whether you're chatting with friends, collaborating with colleagues, or connecting with clients, our ChatApp provides a seamless user experience across devices. On the backend, our robust Go server handles message routing and ensures secure and efficient communication between users. Leveraging the concurrency features of Go channels, our ChatApp delivers high-performance messaging, capable of handling large volumes of concurrent users with ease. Experience the power of real-time communication with our ChatApp, where Go and React come together to redefine the way we connect and collaborate online. Join the conversation today and discover a new level of interactive communication.",
-      "repoLink": "https://github.com/Somraj2929/Realtime-Chat-in-GO.git",
-      "skills": ["GO", "React", "APIs", "Web"]
-    },
-    {
-      "id": 3,
-      "image": "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/projects/gopostgre.png",
-      "title": "Golang REST API",
-      "date": "Jan 2023",
-      "description": "Unlock the potential of your data with our Golang CRUD API powered by PostgreSQL. Seamlessly blending the efficiency of Go with the robustness of PostgreSQL, our API provides a comprehensive solution for managing your data with ease. Built to handle Create, Read, Update, and Delete operations, our API offers a simple yet powerful interface for interacting with your PostgreSQL database. Whether you're building a web application, mobile app, or backend service, our CRUD API provides the flexibility and scalability you need to handle your data efficiently. With our API, you can effortlessly create new records, retrieve existing data, update records with ease, and delete entries as needed, all with minimal effort. Whether you're working with small datasets or managing large volumes of information, our Golang CRUD API ensures smooth and reliable data operations. Experience the simplicity and efficiency of data management with our Golang CRUD API. Whether you're a seasoned developer or just getting started, our API empowers you to build powerful applications with ease, backed by the reliability and performance of PostgreSQL. Start building your next project today and unlock the full potential of your data.",
-      "repoLink": "https://github.com/Somraj2929/Golang-Postgres-API.git",
-      "skills": ["GO", "CRUD", "PostgreSQL", "APIs"]
-    }
-  ]
-}
+[
+  {
+    "image": "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/projects/NewsApp.png",
+    "title": "News App with NextJS",
+    "date": "March 2023",
+    "description": "Experience the next level of news consumption with our cutting-edge News App powered by Next.js and styled with Tailwind CSS. With seamless integration of the NewsAPI, stay informed with the latest headlines, breaking news, and trending stories from around the world. Our News App offers an intuitive user interface, providing advanced features such as search, filter, and pagination, allowing you to customize your news feed according to your interests. Effortlessly search for specific topics or keywords, filter news articles based on categories or sources, and navigate through pages of content with ease. Whether you're a news enthusiast, a professional staying updated on industry trends, or simply looking to stay informed about current events, our News App delivers a streamlined and personalized news experience like never before. Embrace the future of news consumption with our feature-rich News App, your gateway to the world's latest stories, all in one place.",
+    "repoLink": "https://somraj-news-site.vercel.app/",
+    "skills": ["NextJS", "Tailwind", "JavaScript", "Web"]
+  },
+  {
+    "image": "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/projects/chatingo.jpg",
+    "title": "Realtime ChatApp with GO",
+    "date": "Feb 2023",
+    "description": "Step into the world of seamless communication with our Realtime ChatApp powered by Go on the backend and React on the frontend. Harnessing the power of Go channels, our ChatApp delivers lightning-fast messaging capabilities, ensuring real-time interactions with minimal latency. With our intuitive frontend built on React, users experience a sleek and responsive interface, allowing them to engage in conversations effortlessly. Whether you're chatting with friends, collaborating with colleagues, or connecting with clients, our ChatApp provides a seamless user experience across devices. On the backend, our robust Go server handles message routing and ensures secure and efficient communication between users. Leveraging the concurrency features of Go channels, our ChatApp delivers high-performance messaging, capable of handling large volumes of concurrent users with ease. Experience the power of real-time communication with our ChatApp, where Go and React come together to redefine the way we connect and collaborate online. Join the conversation today and discover a new level of interactive communication.",
+    "repoLink": "https://github.com/Somraj2929/Realtime-Chat-in-GO.git",
+    "skills": ["GO", "React", "APIs", "Web"]
+  },
+  {
+    "image": "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/projects/gopostgre.png",
+    "title": "Golang REST API",
+    "date": "Jan 2023",
+    "description": "Unlock the potential of your data with our Golang CRUD API powered by PostgreSQL. Seamlessly blending the efficiency of Go with the robustness of PostgreSQL, our API provides a comprehensive solution for managing your data with ease. Built to handle Create, Read, Update, and Delete operations, our API offers a simple yet powerful interface for interacting with your PostgreSQL database. Whether you're building a web application, mobile app, or backend service, our CRUD API provides the flexibility and scalability you need to handle your data efficiently. With our API, you can effortlessly create new records, retrieve existing data, update records with ease, and delete entries as needed, all with minimal effort. Whether you're working with small datasets or managing large volumes of information, our Golang CRUD API ensures smooth and reliable data operations. Experience the simplicity and efficiency of data management with our Golang CRUD API. Whether you're a seasoned developer or just getting started, our API empowers you to build powerful applications with ease, backed by the reliability and performance of PostgreSQL. Start building your next project today and unlock the full potential of your data.",
+    "repoLink": "https://github.com/Somraj2929/Golang-Postgres-API.git",
+    "skills": ["GO", "CRUD", "PostgreSQL", "APIs"]
+  }
+]

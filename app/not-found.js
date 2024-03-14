@@ -10,7 +10,7 @@ const NotFoundPage = () => (
       </div>
 
       <img
-        src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif"
+        src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/404page.gif"
         alt="Background Image"
         className="flex justify-center items-center md:mt-[-10rem] md:mb-[-5rem]"
       />
