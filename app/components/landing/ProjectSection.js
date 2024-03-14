@@ -10,7 +10,7 @@ const ProjectSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/projects");
+        const response = await fetch("http://44.211.148.246:8000/api/projects");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }

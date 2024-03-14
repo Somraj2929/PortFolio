@@ -7,7 +7,9 @@ const SkillSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/experiences");
+        const response = await fetch(
+          "http://44.211.148.246:8000/api/experiences"
+        );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
