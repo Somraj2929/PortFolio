@@ -1,4 +1,4 @@
-# Use the official Go image as a base
+# Use a base image with Go installed
 FROM golang:latest
 
 # Set the working directory inside the container
@@ -16,6 +16,9 @@ RUN go build -o main .
 
 # Expose the port the server listens on
 EXPOSE 8000
+
+# Set the environment variable to specify the location of the .env file
+ENV DOTENV_PATH .env
 
 # Command to run the executable
 CMD ["./main"]
