@@ -10,7 +10,7 @@ const blogs = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://44.211.148.246:8000/api/data");
+        const response = await fetch("https://3.221.128.110/api/data");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
