@@ -1,4 +1,4 @@
-[
+const blogsData = [
   {
     "id": 1,
     "img": "https://picsum.photos/400",
@@ -110,3 +110,5 @@
     "date": "2022-01-10"
   }
 ]
+
+export default blogsData;

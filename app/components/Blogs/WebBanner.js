@@ -18,9 +18,9 @@ const WebBanner = ({ blogs }) => {
         transitionTime={500}
         className="container mx-auto md:px-16 p-4 pb-10"
       >
-        {blogs.map((blog) => (
+        {blogs.map((blog, index) => (
           <div
-            key={blog._id}
+            key={index}
             className="flex flex-col md:flex-row justify-center rounded-lg bg-pink-100 md:p-6"
           >
             <div className="flex justify-center items-center h-auto md:w-[30rem] p-2">

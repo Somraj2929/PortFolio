@@ -14,9 +14,9 @@ const App = () => {
     <Layout>
       <Navbar />
       <MainSection />
-      <Suspense fallback={<p>Loading Projects...</p>}>
-        <ProjectSection />
-      </Suspense>
+
+      <ProjectSection />
+
       <SkillsSection />
       <ContactMe />
       <Footer />

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ContactService = () => {
   return (
-    <div className="flex flex-wrap justify-between p-4 bg-emerald-400">
+    <div className="flex flex-wrap justify-between p-4 bg-services">
       <h3 className="ml-4 text-3xl">
         :) Feel free to reach out to me for any project or just to say hi! 📧🤝
       </h3>

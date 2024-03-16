@@ -1,10 +1,10 @@
 const servicesDB = [
   {
     id: 1,
-    imagelink: "https://picsum.photos/200",
+    imagelink: "https://picsum.photos/400",
     serviceName: "Web Development",
     description:
-      "We create stunning and responsive websites tailored to your needs. Our team of experienced developers will work closely with you to understand your requirements and deliver a website that not only looks great but also performs optimally.",
+      "We create stunning and responsive websites tailored to your needs. Our team of experienced developers will work closely with you to understand your requirements and deliver a website that not only looks great but also performs optimally. We create stunning and responsive websites tailored to your needs. Our team of experienced developers will work closely with you to understand your requirements and deliver a website that not only looks great but also performs optimally. ",
   },
   {
     id: 2,
