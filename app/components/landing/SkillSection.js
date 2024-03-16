@@ -1,27 +1,28 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import experiences from "@/public/data/experience";
 
 const SkillSection = () => {
-  const [experiences, setExperiences] = useState([]);
+  // const [experiences, setExperiences] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("https://3.221.128.110/api/experiences");
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("https://3.221.128.110/api/experiences");
+  //       if (!response.ok) {
+  //         throw new Error(`HTTP error! Status: ${response.status}`);
+  //       }
 
-        const data = await response.json();
+  //       const data = await response.json();
 
-        setExperiences(data);
-      } catch (error) {
-        console.error("Error fetching experience:", error);
-      }
-    };
+  //       setExperiences(data);
+  //     } catch (error) {
+  //       console.error("Error fetching experience:", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="bg-white flex flex-wrap justify-around p-4 shadow-2xl shadow-white overflow-x-hidden">

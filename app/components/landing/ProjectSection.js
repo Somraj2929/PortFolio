@@ -4,34 +4,36 @@ import projectsData from "/public/data/projectsData";
 import { useEffect, useState } from "react";
 
 const ProjectSection = () => {
-  const [allProjects, setAllProjects] = useState([]);
-  const [trendingProjects, setTrendingProjects] = useState([]);
+  const allProjects = projectsData.slice(0, 3);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("https://3.221.128.110/api/projects");
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
+  // const [allProjects, setAllProjects] = useState([]);
+  // const [trendingProjects, setTrendingProjects] = useState([]);
 
-        const data = await response.json();
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("https://3.221.128.110/api/projects");
+  //       if (!response.ok) {
+  //         throw new Error(`HTTP error! Status: ${response.status}`);
+  //       }
 
-        //for filtering the tagged projects
-        const tagged = data.filter((project) => {
-          return (
-            project.tag && project.tag.some((tag) => tag.toLowerCase() === "go")
-          );
-        });
+  //       const data = await response.json();
 
-        setAllProjects(data);
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      }
-    };
+  //       //for filtering the tagged projects
+  //       const tagged = data.filter((project) => {
+  //         return (
+  //           project.tag && project.tag.some((tag) => tag.toLowerCase() === "go")
+  //         );
+  //       });
 
-    fetchData();
-  }, []);
+  //       setAllProjects(data);
+  //     } catch (error) {
+  //       console.error("Error fetching projects:", error);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="bg-homepage-gradient relative text-white overflow-x-hidden overscroll-x-none shadow-2xl shadow-black  ">

@@ -6,13 +6,17 @@ import ContactMe from "./components/landing/ContactMe";
 import MainSection from "./components/landing/MainSection";
 import ProjectSection from "./components/landing/ProjectSection";
 import SkillsSection from "./components/landing/SkillSection";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const App = () => {
   return (
     <Layout>
       <Navbar />
       <MainSection />
-      <ProjectSection />
+      <Suspense fallback={<p>Loading Projects...</p>}>
+        <ProjectSection />
+      </Suspense>
       <SkillsSection />
       <ContactMe />
       <Footer />
