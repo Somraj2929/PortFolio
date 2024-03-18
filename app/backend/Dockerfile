@@ -15,7 +15,7 @@ COPY . .
 RUN go build -o main .
 
 # Expose the port the server listens on
-EXPOSE 8000
+# EXPOSE 8000
 
 # Set the environment variable to specify the location of the .env file
 ENV DOTENV_PATH .env

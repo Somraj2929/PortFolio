@@ -139,8 +139,14 @@ r.GET("/api/experiences", func(c *gin.Context) {
     c.JSON(http.StatusOK, result)
 })
 	
-	err = r.Run(":8000")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8000" 
+	}
+
+	// Run the server
+	err = r.Run(":" + port)
 	if err != nil {
 		log.Fatal(err)
-	}
+}
 }
