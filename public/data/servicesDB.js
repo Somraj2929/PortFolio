@@ -1,45 +1,51 @@
 const servicesDB = [
   {
     id: 1,
-    imagelink: "https://picsum.photos/400",
+    imagelink:
+      "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/webd.png",
     serviceName: "Web Development",
     description:
-      "We create stunning and responsive websites tailored to your needs. Our team of experienced developers will work closely with you to understand your requirements and deliver a website that not only looks great but also performs optimally. We create stunning and responsive websites tailored to your needs. Our team of experienced developers will work closely with you to understand your requirements and deliver a website that not only looks great but also performs optimally. ",
+      "Web development is more than just code; it's about crafting immersive digital experiences that leave a lasting impression. Leveraging frameworks like Next.js and tools like React, I specialize in building stunning and responsive websites that push the boundaries of design and functionality. From sleek corporate portals to dynamic e-commerce platforms, my expertise spans HTML, CSS, JavaScript, and beyond. Collaborating closely with clients, I transform visions into captivating online realities, ensuring each project is tailored to your unique needs and objectives.",
   },
   {
     id: 2,
-    imagelink: "https://picsum.photos/200",
-    serviceName: "Mobile App Development",
+    imagelink:
+      "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/backend.png",
+    serviceName: "Backend Development",
     description:
-      "We build native and cross-platform mobile applications for iOS and Android. Our skilled team of developers will transform your ideas into feature-rich and user-friendly mobile apps that meet your business objectives.",
+      "Behind every great application lies a robust backend infrastructure that powers its functionality and performance. Specializing in backend development using Go (Golang), I architect scalable solutions that handle complex business logic and data processing. From RESTful APIs to microservices architecture, I leverage the power of languages like Go and frameworks like Gin to build secure and efficient backend systems. My expertise extends to database technologies such as MongoDB, PostgreSQL, and MySQL, ensuring your backend is not just a foundation but a competitive advantage.",
   },
   {
     id: 3,
-    imagelink: "https://picsum.photos/200",
-    serviceName: "UI/UX Design",
+    imagelink:
+      "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/devops.png",
+    serviceName: "DevOps & Cloud Computing",
     description:
-      "We provide comprehensive UI/UX design services to enhance the user experience of your digital products. Our team of skilled designers will work closely with you to create intuitive and visually appealing interfaces that engage and delight your users. From wireframing and prototyping to final design implementation, we ensure that every aspect of your UI/UX design is carefully crafted to meet your specific requirements. Whether you need a complete redesign or just a few tweaks, our UI/UX design services will help you create a seamless and enjoyable user experience for your customers.",
+      "In today's fast-paced digital landscape, DevOps and cloud computing are essential for agility and scalability. As a DevOps engineer, I specialize in streamlining development workflows, automating deployment pipelines, and optimizing infrastructure on leading cloud platforms like AWS, Azure, and Google Cloud. Leveraging tools like Docker and Kubernetes, I orchestrate containerized environments that enable seamless deployment and scalability. My expertise spans infrastructure as code (IaC) tools like Terraform and configuration management with Ansible, ensuring DevOps principles",
   },
   {
     id: 4,
-    imagelink: "https://picsum.photos/200",
-    serviceName: "E-commerce Solutions",
+    imagelink:
+      "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/uidesign.png",
+    serviceName: "UI/UX Design",
     description:
-      "We develop customized e-commerce solutions to help you sell online. Our team of experts will analyze your business requirements and build an e-commerce platform that is secure, scalable, and optimized for conversions.",
+      "User experience is at the heart of every successful digital product. As a UI/UX designer, I combine creativity with strategy to craft interfaces that captivate and delight users. Leveraging tools like Figma and Adobe XD, I meticulously design every interaction to ensure intuitive navigation and seamless functionality. Whether you're launching a new app or revamping an existing platform, my approach focuses on understanding user behaviors, iterating based on feedback, and delivering designs that elevate your brand and drive engagement.",
   },
   {
     id: 5,
-    imagelink: "https://picsum.photos/200",
-    serviceName: "Digital Marketing",
+    imagelink:
+      "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/database.png",
+    serviceName: "Database Management",
     description:
-      "We provide effective digital marketing strategies to boost your online presence. Our team of marketing professionals will create tailored campaigns that drive traffic, generate leads, and increase brand visibility.",
+      "Data is the lifeblood of modern applications, and effective database management is essential for success. With expertise in MongoDB, PostgreSQL, and MySQL, I specialize in designing and implementing scalable and efficient database solutions. From optimizing schemas to fine-tuning queries, I ensure your databases are optimized for performance, reliability, and security. Leveraging languages like SQL and NoSQL, I provide tailored database solutions that support your business objectives and fuel growth.",
   },
   {
     id: 6,
-    imagelink: "https://picsum.photos/200",
-    serviceName: "Cloud Computing",
+    imagelink:
+      "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/cyber.png",
+    serviceName: "Cyber Security",
     description:
-      "We offer scalable and secure cloud computing solutions for your business. Our team of cloud experts will help you migrate your applications and data to the cloud, ensuring high availability, data security, and cost optimization.",
+      "In an era of evolving cyber threats, safeguarding your digital assets is paramount. As a cybersecurity specialist, I offer comprehensive solutions to protect your organization from potential breaches and vulnerabilities. From implementing robust encryption protocols to conducting penetration testing, I work proactively to identify and mitigate security risks across your infrastructure. Leveraging tools like Nessus and Wireshark, I provide peace of mind by ensuring that your systems and data remain secure, compliant, and resilient against cyber threats.",
   },
 ];
 

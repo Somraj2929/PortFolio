@@ -2,45 +2,51 @@ const Testimonials = () => {
   const testinomials = [
     {
       id: 1,
-      name: "John Doe",
-      title: "CEO at Company",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/1.jpg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
+      name: "Nikhil Deore",
+      title: "Web Developer",
+      image:
+        "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/testimonials/nikhil.jpg",
+      text: "Somraj having good skills in Web Dev using NextJS. His dedication to writing clean code and solving complex problems made him a valuable team member.",
     },
     {
       id: 2,
-      name: "John Doe",
-      title: "CEO at Company",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/2.jpg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
+      name: "Arun Sharma",
+      title: "Web Developer",
+      image:
+        "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/testimonials/arun.jpg",
+      text: "Somraj's expertise in backend using Golang was evident in our college project. His collaborative approach and proactive problem-solving skills were commendable.",
     },
     {
       id: 3,
-      name: "John Doe",
-      title: "CEO at Company",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/3.jpg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
+      name: "Chirag Suthar",
+      title: "Software Engineer",
+      image:
+        "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/testimonials/chirag.jpg",
+      text: "I worked with Somraj on a DevOps project during college. His knowledge of DevOps and cloud computing greatly contributed to optimizing our project's infrastructure.",
     },
     {
       id: 4,
-      name: "John Doe",
-      title: "CEO at Company",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/4.jpg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
+      name: "Sanskriti Singh",
+      title: "Business Development",
+      image:
+        "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/testimonials/sanskriti.jpg",
+      text: "Somraj's designs in UI/UX projects were impressive. His attention to detail and understanding of user needs resulted in engaging and intuitive designs.",
     },
     {
       id: 5,
-      name: "John Doe",
-      title: "CEO at Company",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/5.jpg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
+      name: "Deep Singh Shekhawat",
+      title: "Data Analyst & Marketing",
+      image:
+        "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/testimonials/deep.jpg",
+      text: "I worked with Somraj on database management projects. His expertise in MongoDB, SQL-based ensured efficient and scalable database solutions.",
     },
     {
       id: 6,
-      name: "John Doe",
-      title: "CEO at Company",
-      image: "https://xsgames.co/randomusers/assets/avatars/male/6.jpg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
+      name: "Simran Sinha",
+      title: "Software Engineer",
+      image:
+        "https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/testimonials/simran.jpg",
+      text: "Somraj showed a strong interest in cybersecurity. His knowledge of cybersecurity concepts and tools like Nessus and Wireshark was impressive.",
     },
   ];
   return (

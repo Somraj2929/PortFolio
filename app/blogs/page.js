@@ -5,6 +5,7 @@ import WebBanner from "../components/Blogs/WebBanner";
 import blogsData from "@/public/data/blogsData";
 import GridBlogs from "../components/Blogs/gridBlogs";
 import { useEffect, useState } from "react";
+import NotFoundPage from "../not-found";
 
 const blogs = () => {
   // const bannerBlogs = blogsData.slice(0, 3);
@@ -42,8 +43,9 @@ const blogs = () => {
   return (
     <>
       <Navbar />
-      <WebBanner blogs={trendingBlogs} />
-      <GridBlogs />
+      {/* <WebBanner blogs={trendingBlogs} />
+      <GridBlogs /> */}
+      <NotFoundPage />
     </>
   );
 };

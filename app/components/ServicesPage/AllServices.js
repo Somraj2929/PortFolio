@@ -7,14 +7,14 @@ import { IoArrowBackCircle } from "react-icons/io5";
 const ServicePopup = ({ service, onClose }) => {
   return (
     <div class="fixed z-30 top-0 left-0 w-full h-full pt-2 flex items-center justify-center bg-gray-800 bg-opacity-50">
-      <div class="bg-white my-10 mx-2 md:my-40 md:p-8 p-4 rounded-lg flex flex-col justify-center items-center md:w-[40rem] w-[20rem] min-h-[30rem] md:max-h-[35rem] max-h-[40rem] overflow-y-scroll">
+      <div class="bg-white my-10 mx-2 md:my-40 md:p-8 p-4 rounded-lg flex flex-col justify-center items-center md:w-[40rem] w-[20rem] min-h-[30rem] md:max-h-[35rem] max-h-[40rem] overflow-hidden">
         <button
           class="absolute top-4 right-4 bg-black text-white flex justify-center text-3xl py-2 px-2 rounded-full"
           onClick={onClose}
         >
           <IoArrowBackCircle />
         </button>
-        <div class="w-full md:min-h-[250px] min-h-[200px] overflow-hidden">
+        <div class="w-full h-[300px] md:min-h-[250px] min-h-[200px] md:pt-0 pt-1">
           <img
             src={service.imagelink}
             alt={service.serviceName}
@@ -22,7 +22,7 @@ const ServicePopup = ({ service, onClose }) => {
           />
         </div>
         <h2 class="text-xl font-semibold p-2">{service.serviceName}</h2>
-        <p class="px-4">{service.description}</p>
+        <p class="text-center md:px-4">{service.description}</p>
       </div>
     </div>
   );
@@ -75,7 +75,7 @@ const Services = () => {
               {service.serviceName}
             </h2>
             <p className="my-2 italic">
-              {service.description.slice(0, 134) + "..."}
+              {service.description.slice(0, 130) + "..."}
             </p>
             <div className="py-2">
               <button
