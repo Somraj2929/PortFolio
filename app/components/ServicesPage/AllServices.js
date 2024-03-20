@@ -3,6 +3,7 @@ import servicesDB from "@/public/data/servicesDB";
 import Link from "next/link";
 import { useState } from "react";
 import { IoArrowBackCircle } from "react-icons/io5";
+import Image from "next/image";
 
 const ServicePopup = ({ service, onClose }) => {
   return (
@@ -15,9 +16,11 @@ const ServicePopup = ({ service, onClose }) => {
           <IoArrowBackCircle />
         </button>
         <div class="w-full h-[300px] md:min-h-[250px] min-h-[200px] md:pt-0 pt-1">
-          <img
+          <Image
             src={service.imagelink}
             alt={service.serviceName}
+            width={600}
+            height={300}
             class="w-full h-full object-fit rounded"
           />
         </div>
@@ -47,14 +50,18 @@ const Services = () => {
         <h1 className="text-4xl font-bold">Services</h1>
       </div>
       <div className="bg-homepage-gradient text-white flex flex-wrap justify-center items-center border rounded-xl">
-        <img
+        <Image
           src="/images/banners/serviceweb.webp"
-          alt="NextJS"
+          alt="Web"
+          width={1920}
+          height={400}
           className="hidden md:block rounded-xl"
         />
-        <img
+        <Image
           src="/images/banners/servicemweb.webp"
-          alt="Golang"
+          alt="MWeb"
+          width={830}
+          height={300}
           className="block md:hidden rounded-xl"
         />
         <p className="md:text-lg text-lg text-center p-3">

@@ -59,9 +59,10 @@ const ContactMe = () => {
           action="https://send.pageclip.co/xdvSeQsikzoNQNna7lOQ0FUofEN9RgBp"
           className="flex flex-col items-end pageclip-form"
           method="post"
+          autoComplete="on"
         >
           <div className="mb-4">
-            <label htmlFor="name" className="block font-semibold mb-2">
+            <label id="name" className="block font-semibold mb-2">
               Name
             </label>
             <input
@@ -73,7 +74,7 @@ const ContactMe = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block font-semibold mb-2">
+            <label id="email" className="block font-semibold mb-2">
               Email
             </label>
             <input
@@ -85,7 +86,7 @@ const ContactMe = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="phone" className="block  font-semibold mb-2">
+            <label id="phone" className="block  font-semibold mb-2">
               Phone
             </label>
             <input
@@ -97,7 +98,7 @@ const ContactMe = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block font-semibold mb-2">
+            <label id="message" className="block font-semibold mb-2">
               Message
             </label>
             <textarea

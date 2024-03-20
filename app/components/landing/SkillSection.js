@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import experiences from "@/public/data/experience";
 
 const SkillSection = () => {
@@ -38,9 +39,11 @@ const SkillSection = () => {
         </div>
         <div className="md:max-w-[70vh] md:w-auto w-[24rem] pt-4 px-4">
           <p className="flex items-center">
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/arrow.svg"
               alt="Arrow"
+              width={24}
+              height={24}
             />
             <span className="ml-2 text-wrap">
               Experienced in crafting scalable web applications and implementing
@@ -53,46 +56,62 @@ const SkillSection = () => {
         </div>
         <div>
           <h2 className="text-4xl font-semibold mt-8 mb-4">Skills</h2>
-          <div className="flex flex-wrap justify-center md:w-[26rem] w-[24rem]">
-            <img
+          <div className="flex flex-wrap justify-center md:w-[24rem] w-[24rem]">
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/nextjs.svg"
               alt="NextJS"
+              width={82}
+              height={82}
               className="md:p-1 p-1"
             />
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/go.svg"
               alt="Golang"
+              width={82}
+              height={82}
               className="p-1"
             />
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/git.svg"
               alt="Git"
+              width={82}
+              height={82}
               className="p-1"
             />
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/aws.svg"
               alt="AWS"
+              width={82}
+              height={82}
               className="p-1"
             />
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/jenkins.svg"
               alt="Jenkins"
+              width={82}
+              height={82}
               className="p-1"
             />
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/docker.svg"
               alt="Docker"
+              width={82}
+              height={82}
               className="p-1"
             />
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/kubernetes.svg"
+              width={82}
+              height={82}
               alt="Kubernetes"
               className="p-1"
             />
 
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/skills/figma.svg"
               alt="Figma"
+              width={82}
+              height={82}
               className="p-1"
             />
           </div>
@@ -109,9 +128,11 @@ const SkillSection = () => {
           <div className="antialiased">
             {experiences.map((experience, index) => (
               <div key={index} className="pt-4">
-                <img
+                <Image
                   src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/cardline.svg"
                   alt="Experiences"
+                  width={648}
+                  height={3}
                   className="w-full"
                 />
                 <div className="flex justify-between">
@@ -127,8 +148,11 @@ const SkillSection = () => {
             ))}
           </div>
           <div className="justify-center items-center flex">
-            <img
+            <Image
               src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/Devops.png"
+              alt="DevOps"
+              width={640}
+              height={340}
               className="ml-2 mt-1 md:h-[35vh]"
             />
           </div>

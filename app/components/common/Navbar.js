@@ -1,6 +1,7 @@
 // app/components/common/Navbar.js
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 
@@ -12,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-homepage-gradient p-2 w-full flex items-center justify-between overflow-x-hidden overscroll-x-none  sticky z-20 top-0 shadow-2xl shadow-silver-100">
+    <div className="bg-homepage-gradient p-2 w-full flex items-center justify-between overflow-x-hidden overscroll-x-none  sticky z-20 top-0 shadow-2xl shadow-silver-100">
       <div className="md:hidden flex items-center">
         <button
           onClick={toggleMenu}
@@ -23,9 +24,11 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-center ml-8 md:ml-2">
         <Link href="/">
-          <img
+          <Image
             src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/SomrajBGR.png"
             alt="Logo"
+            width={128}
+            height={56}
             className="h-14"
           />
         </Link>
@@ -75,16 +78,18 @@ const Navbar = () => {
           Get Resume
         </button>
         {/* <button className="block md:hidden bg-indigo-600 hover:bg-green-800 text-white font-bold py-2 px-3 md:mr-4 rounded-[15px] md:w-[133px]  md:h-[51px]">
-          <img src="/images/resumedl.png" alt="Download Resume" />
+          <Image src="/images/resumedl.png" alt="Download Resume" />
         </button> */}
 
-        <img
+        <Image
           src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/resume.png"
           alt="Contact"
+          width={40}
+          height={40}
           className="block md:hidden "
         />
       </Link>
-    </nav>
+    </div>
   );
 };
 

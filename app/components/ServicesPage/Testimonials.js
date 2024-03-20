@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Testimonials = () => {
   const testinomials = [
     {
@@ -62,7 +64,12 @@ const Testimonials = () => {
                 <p className=" mb-6">{testimonial.text}</p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4">
-                    <img src={testimonial.image} alt={testimonial.name} />
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      width={48}
+                      height={48}
+                    />
                   </div>
                   <div>
                     <h4 className="font-bold">{testimonial.name}</h4>

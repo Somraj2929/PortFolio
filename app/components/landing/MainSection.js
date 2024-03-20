@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const MainSection = () => {
   return (
@@ -6,9 +7,11 @@ const MainSection = () => {
       {/* Left Section */}
       <div className="flex flex-col">
         <div className="md:mt-12 mt-6 mb-[-1.5rem] md:ml-[-2rem] ml-[-1.2rem]">
-          <img
+          <Image
             src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/hello.svg"
             alt="Logo"
+            width={80}
+            height={56}
             className="h-14"
           />
         </div>
@@ -20,9 +23,11 @@ const MainSection = () => {
           </h1>
         </div>
         <p className="flex items-center mt-2">
-          <img
+          <Image
             src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/arrow.svg"
             alt="Arrow"
+            width={39}
+            height={2}
           />
           <span className="ml-2 ">
             From Pixels to Pipelines: Development,
@@ -50,9 +55,9 @@ const MainSection = () => {
               </span>
             </button>
           </Link>
-          <Link href="/portfolio">
+          <Link href="/services">
             <button className="flex items-center text-black justify-center bg-white hover:bg-pink-300 font-bold py-4 px-6 mt-4 rounded-[20px]  ml-4">
-              Portfolio
+              Services
               <span className="ml-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +84,12 @@ const MainSection = () => {
               rel="noopener noreferrer"
               className="mr-2"
             >
-              <img
+              <Image
                 src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/github.png"
                 alt="GitHub"
-                className="h-9"
+                width={48}
+                height={48}
+                className="h-9 w-auto"
               />
             </a>
             <a
@@ -90,10 +97,12 @@ const MainSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/linkedin.png"
                 alt="LinkedIn"
-                className="h-8"
+                width={48}
+                height={48}
+                className="h-8 w-auto"
               />
             </a>
           </div>
@@ -104,9 +113,11 @@ const MainSection = () => {
       <div className="flex mb-8 ">
         <div className="relative flex-wrap hidden md:block">
           {/* SomrajPP image */}
-          <img
+          <Image
             src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/SomrajPP.svg"
             alt="Hero"
+            width={774}
+            height={845}
             className="w-[30rem] bg-transparent"
           />
 
@@ -120,16 +131,23 @@ const MainSection = () => {
           {/* About Me image - Centered at the Bottom */}
           <div className="absolute bottom-6 ml-[-1.5em] left-1/2 transform -translate-x-1/2 p-6 ">
             <Link href="services">
-              <img
+              <Image
                 src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/aboutme.svg"
                 alt="About Me"
+                width={240}
+                height={112}
                 className="h-28 about-me mx-auto"
               />
             </Link>
           </div>
         </div>
         <div className="right-0 absolute mr-4 hidden md:block">
-          <img src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/scrolldown.svg" />
+          <Image
+            src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/scrolldown.svg"
+            alt="Scroll Down"
+            width={25}
+            height={548}
+          />
         </div>
       </div>
     </div>

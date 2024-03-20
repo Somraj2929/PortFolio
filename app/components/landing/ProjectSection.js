@@ -2,6 +2,7 @@
 import Link from "next/link";
 import projectsData from "/public/data/projectsData";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const ProjectSection = () => {
   // const allProjects = projectsData.slice(0, 3);
@@ -43,9 +44,11 @@ const ProjectSection = () => {
         <h1 className="text-4xl leading-tight font-bold mt-10">Top Projects</h1>
       </div>
       <span className="justify-center items-center flex">
-        <img
+        <Image
           src="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/borderline1.svg"
           alt="underline"
+          width={320}
+          height={20}
           className="w-[20rem] mt-4"
         />
       </span>
@@ -55,9 +58,11 @@ const ProjectSection = () => {
             key={index}
             className="w-[22rem] hvr-glow h-auto bg-indigo-100 shadow shadow-indigo-600 rounded-[20px] flex flex-col p-2"
           >
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={640}
+              height={360}
               className="w-full h-[200px] rounded-[20px] rounded-tr-[20px] object-fit"
             />
             <div className="flex justify-between items-center p-2">
