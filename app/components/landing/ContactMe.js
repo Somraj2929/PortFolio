@@ -94,6 +94,8 @@ const ContactMe = () => {
               name="phone"
               required
               placeholder="Your Phone"
+              pattern="[0-9]{10}"
+              title="Please enter a 10-digit phone number"
               className=" focus:outline-green-500 border-indigo-400  rounded-xl py-2 px-3 w-[40vh] md:w-[35rem] text-black font-medium"
             />
           </div>
