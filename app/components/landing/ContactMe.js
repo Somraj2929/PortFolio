@@ -56,7 +56,7 @@ const ContactMe = () => {
         id="contact"
       >
         <form
-          action="https://send.pageclip.co/xdvSeQsikzoNQNna7lOQ0FUofEN9RgBp"
+          action="https://send.pageclip.co/xdvSeQsikzoNQNna7lOQ0FUofEN9RgBp/Portfolio"
           className="flex flex-col items-end pageclip-form"
           method="post"
           autoComplete="on"
