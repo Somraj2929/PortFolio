@@ -42,7 +42,7 @@ const Navbar = () => {
           <p className="hvr-underline">Services</p>
         </Link>
 
-        <Link href="/blogs">
+        <Link href="/blogs" className="hidden">
           <p className="hvr-underline">Blog</p>
         </Link>
       </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
               <p className="py-2 active:text-yellow-400">Services</p>
             </Link>
 
-            <Link href="/blogs">
+            <Link href="/blogs" className="hidden">
               <p className="py-2 active:text-yellow-400">Blog</p>
             </Link>
           </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
       )}
 
       <Link
-        href="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/cv/SomrajCVMain_Dev.pdf"
+        href="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/cv/Somraj-SDE-Resume.pdf"
         target="_blank"
         download="SomrajCVMain_Dev.pdf"
       >
