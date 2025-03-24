@@ -70,9 +70,9 @@ const Navbar = () => {
       )}
 
       <Link
-        href="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/cv/Somraj-SDE-Resume.pdf"
+        href="https://somraj-s3-bucket.s3.us-east-2.amazonaws.com/portfolio/cv/Somraj_DevOps_CV.pdf"
         target="_blank"
-        download="SomrajCVMain_Dev.pdf"
+        download="Somraj_DevOps_CV.pdf"
       >
         <button className="hidden md:block hvr-call-action bg-indigo-500  text-white font-bold py-3 px-4 md:mr-4 rounded-[15px]   mr-[-2px]">
           Get Resume
