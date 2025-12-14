@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import projectsData from "/public/data/projectsData";
+import projectsData from "@/public/data/projectsData";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
